@@ -31,7 +31,7 @@ int main (int argc, char *argv[])
 		checknum(high);
 		if (low > high) {
 			fprintf(stderr, "low must be less than high\n");
-			//exit(0);
+			exit(0);
 		}
 	} else
 	    low = 1;
@@ -50,7 +50,7 @@ checknum(int value)
 {
 	if (value < 1 || value > 9999) {
 		fprintf(stderr,"Use numbers in range 1 .. 9999\n");
-		//exit(0);
+		exit(0);
 	}
 }
 
